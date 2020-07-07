@@ -1,0 +1,55 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo',
+    'Inter', 'Spoqa Han Sans', 'Segoe UI', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', Sans-Serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#app span {
+  cursor: pointer;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+}
+
+#app span svg {
+  width: 100%;
+  height: 100%;
+  transition: fill 0.2s;
+}
+
+#app span svg:hover {
+  fill: tomato;
+}
+
+#app #credential {
+  margin-top: 3rem;
+}
+
+/* Not available */
+#app span.not-available {
+  cursor: not-allowed;
+}
+
+#app span + div#credential,
+#app span.not-available + div#credential {
+  color: #aaa;
+}
